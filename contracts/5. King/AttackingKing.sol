@@ -7,7 +7,6 @@ contract AttackingKing {
     address public contractAddress;
     King public kingContract;
 
-
     constructor(address _contractAddress) payable {
         contractAddress = _contractAddress;
         kingContract = King(payable(contractAddress));
